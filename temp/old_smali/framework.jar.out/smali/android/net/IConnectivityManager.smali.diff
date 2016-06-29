@@ -1,0 +1,31 @@
+*** ./smali/android/net/IConnectivityManager.smali	2016-06-27 21:54:02.215422426 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/framework.jar.out/./smali/android/net/IConnectivityManager.smali	2016-06-27 21:57:17.493735750 +0800
+***************
+*** 447,456 ****
+--- 447,472 ----
+      .end annotation
+  .end method
+  
++ .method public abstract startUsingNetworkFeatureMSim(ILjava/lang/String;Landroid/os/IBinder;I)I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
+  .method public abstract stopUsingNetworkFeature(ILjava/lang/String;)I
+      .annotation system Ldalvik/annotation/Throws;
+          value = {
+              Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
++ .method public abstract stopUsingNetworkFeatureMSim(ILjava/lang/String;I)I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
+          }
+      .end annotation
+  .end method

@@ -1,0 +1,14 @@
+*** ./smali/android/view/WindowManagerPolicy.smali	2016-06-27 21:54:22.431658157 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/framework.jar.out/./smali/android/view/WindowManagerPolicy.smali	2016-06-27 21:57:48.566110380 +0800
+***************
+*** 247,252 ****
+--- 247,255 ----
+  .method public abstract lockNow(Landroid/os/Bundle;)V
+  .end method
+  
++ .method public abstract notifyBackLidSwitchChanged(JZ)V
++ .end method
++ 
+  .method public abstract notifyLidSwitchChanged(JZ)V
+  .end method
+  

@@ -1,0 +1,13 @@
+*** ./smali/com/android/internal/telephony/PhoneFactory.smali	2016-06-27 21:53:56.619357348 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/telephony-common.jar.out/./smali/com/android/internal/telephony/PhoneFactory.smali	2016-06-27 21:57:12.029670034 +0800
+***************
+*** 551,556 ****
+--- 551,558 ----
+      .prologue
+      invoke-static {p0}, Lcom/android/internal/telephony/PhoneFactory;->makeDefaultPhone(Landroid/content/Context;)V
+  
++     invoke-static {p0}, Lmiui/telephony/MiuiTelephony;->init(Landroid/content/Context;)V
++ 
+      return-void
+  .end method
+  

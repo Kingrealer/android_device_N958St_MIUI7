@@ -1,0 +1,24 @@
+*** ./smali/android/telephony/SmsMessage.smali	2016-06-27 21:54:00.519402695 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/telephony-common.jar.out/./smali/android/telephony/SmsMessage.smali	2016-06-27 21:57:15.769715010 +0800
+***************
+*** 829,834 ****
+--- 829,847 ----
+      return-object v0
+  .end method
+  
++ .method public getEncodingType()I
++     .locals 1
++ 
++     .prologue
++     iget-object v0, p0, Landroid/telephony/SmsMessage;->mWrappedSmsMessage:Lcom/android/internal/telephony/SmsMessageBase;
++ 
++     invoke-virtual {v0}, Lcom/android/internal/telephony/SmsMessageBase;->getEncodingType()I
++ 
++     move-result v0
++ 
++     return v0
++ .end method
++ 
+  .method public getIndexOnIcc()I
+      .locals 1
+  

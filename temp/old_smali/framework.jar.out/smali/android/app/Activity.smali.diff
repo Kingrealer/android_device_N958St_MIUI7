@@ -1,0 +1,13 @@
+*** ./smali/android/app/Activity.smali	2016-06-27 21:54:35.883815547 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/framework.jar.out/./smali/android/app/Activity.smali	2016-06-27 21:58:11.054382459 +0800
+***************
+*** 5142,5147 ****
+--- 5142,5149 ----
+  
+      iput-boolean v0, p0, Landroid/app/Activity;->mCalled:Z
+  
++     invoke-static {p0}, Landroid/app/ActivityInjector;->checkAccessControl(Landroid/app/Activity;)V
++ 
+      return-void
+  .end method
+  

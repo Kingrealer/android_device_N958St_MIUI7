@@ -1,0 +1,18 @@
+*** ./smali/com/android/server/NotificationManagerService$5.smali	2016-06-27 21:55:00.236101511 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/services.jar.out/./smali/com/android/server/NotificationManagerService$5.smali	2016-06-27 21:58:36.562691993 +0800
+***************
+*** 382,387 ****
+--- 382,394 ----
+      # setter for: Lcom/android/server/NotificationManagerService;->mScreenOn:Z
+      invoke-static {v1, v3}, Lcom/android/server/NotificationManagerService;->access$1502(Lcom/android/server/NotificationManagerService;Z)Z
+  
++     move-object/from16 v0, p0
++ 
++     iget-object v1, v0, Lcom/android/server/NotificationManagerService$5;->this$0:Lcom/android/server/NotificationManagerService;
++ 
++     # invokes: Lcom/android/server/NotificationManagerService;->updateNotificationPulse()V
++     invoke-static {v1}, Lcom/android/server/NotificationManagerService;->access_updateNotificationPulse(Lcom/android/server/NotificationManagerService;)V
++ 
+      goto :goto_4
+  
+      :cond_f

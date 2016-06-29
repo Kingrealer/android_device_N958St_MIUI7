@@ -1,0 +1,19 @@
+*** ./smali/android/net/CaptivePortalTracker$DelayedCaptiveCheckState.smali	2016-06-27 21:54:07.315481804 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/framework.jar.out/./smali/android/net/CaptivePortalTracker$DelayedCaptiveCheckState.smali	2016-06-27 21:57:22.153791835 +0800
+***************
+*** 76,82 ****
+  
+      iget-object v1, p0, Landroid/net/CaptivePortalTracker$DelayedCaptiveCheckState;->this$0:Landroid/net/CaptivePortalTracker;
+  
+!     const-wide/16 v2, 0x2710
+  
+      invoke-virtual {v1, v0, v2, v3}, Landroid/net/CaptivePortalTracker;->sendMessageDelayed(Landroid/os/Message;J)V
+  
+--- 76,82 ----
+  
+      iget-object v1, p0, Landroid/net/CaptivePortalTracker$DelayedCaptiveCheckState;->this$0:Landroid/net/CaptivePortalTracker;
+  
+!     const-wide/16 v2, 0x0
+  
+      invoke-virtual {v1, v0, v2, v3}, Landroid/net/CaptivePortalTracker;->sendMessageDelayed(Landroid/os/Message;J)V
+  

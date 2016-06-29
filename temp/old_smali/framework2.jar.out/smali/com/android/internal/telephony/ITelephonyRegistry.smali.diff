@@ -1,0 +1,24 @@
+*** ./smali/com/android/internal/telephony/ITelephonyRegistry.smali	2016-06-27 21:53:53.187317474 +0800
+--- /home/kingrealer/MIUI/N958St/temp/new_smali/framework2.jar.out/./smali/com/android/internal/telephony/ITelephonyRegistry.smali	2016-06-27 21:57:06.157599469 +0800
+***************
+*** 120,122 ****
+--- 120,138 ----
+          }
+      .end annotation
+  .end method
++ 
++ .method public abstract setMiuiTelephony(Lmiui/telephony/IMiuiTelephony;)V
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
++ .method public abstract getMiuiTelephony()Lmiui/telephony/IMiuiTelephony;
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
