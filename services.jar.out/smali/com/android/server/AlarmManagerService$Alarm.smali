@@ -21,13 +21,13 @@
 
 .field public operation:Landroid/app/PendingIntent;
 
-.field public pid:I
+.field public pid:I                            # add
 
 .field public repeatInterval:J
 
 .field public type:I
 
-.field public uid:I
+.field public uid:I                            # add
 
 .field public when:J
 

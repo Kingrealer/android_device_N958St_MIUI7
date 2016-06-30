@@ -26,12 +26,11 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
+    const-string v2, "com.google.android.c2dm.intent.RECEIVE"
     .line 33
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v2
-
-    const-string v3, "com.google.android.c2dm.intent.RECEIVE"
+    move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -88,7 +87,7 @@
 
     const-string v2, "Reboot"
 
-    invoke-direct {v0, p0, v2, v1, p1}, Lcom/android/server/MasterClearReceiver$1;-><init>(Lcom/android/server/MasterClearReceiver;Ljava/lang/String;ZLandroid/content/Context;)V
+    invoke-direct {v0, p0, v1, p1, p2}, Lcom/android/server/MasterClearReceiver$1;-><init>(Lcom/android/server/MasterClearReceiver;Ljava/lang/String;Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 60
     .local v0, "thr":Ljava/lang/Thread;
